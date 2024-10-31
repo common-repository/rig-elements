@@ -1,0 +1,9 @@
+{% if product_image != false and elementor_preview_mode == null %}
+    <img class="rig-single-products-img" src="{{product_image}}" alt="Avatar">
+
+{% elseif product_image == false and elementor_preview_mode == null and default_image_switcher == 'enable' %}
+    <img class="rig-single-products-img" src="{{product_default_image.url}}" alt="Avatar">
+
+{% else %}
+    <img class="rig-single-products-img" src="{{preview_image}}" alt="Avatar">
+{% endif %}

@@ -1,0 +1,22 @@
+<form method="POST" action="{{action_url}}">
+
+<div class="rig-leads-form">
+
+{% if enable_name_field == 'yes' %}
+<div class="w-full mt-4 mb-4">
+<label for="name" class="mb-2 text-sm font-medium text-gray-900">{{name_field_label}}</label>
+<input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg" placeholder="{{name_field_placeholder}}" required>
+</div>
+{% endif %}
+
+<div class="w-full mt-4 mb-4">
+<label for="email" class="mb-2 text-sm font-medium text-gray-900">{{email_field_label}}</label>
+<input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg" placeholder="{{email_field_placeholder}}" required>
+</div>
+
+<div class="mt-6 w-full">
+<button type="submit" id="rig-lead-submit" class="text-white bg-blue-700 hover:bg-blue-800 w-full">{{button_text}}</button>
+</div>
+
+</div>
+</form>

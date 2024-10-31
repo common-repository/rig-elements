@@ -1,0 +1,11 @@
+{% if elementor_preview_mode == null %}
+    <{{title_tag}} class="rig-post-title">{{post_title}}</{{title_tag}}>
+{% else %}
+    <{{title_tag}} class="rig-post-title">
+    {% for title in preview_title %}
+         {% if loop.first %}
+            {{ title }}
+        {% endif %}
+    {% endfor %}
+    </{{title_tag}}>
+{% endif %}

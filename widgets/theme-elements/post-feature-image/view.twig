@@ -1,0 +1,9 @@
+{% if elementor_preview_mode == null %}
+    <img src="{{post_image}}" class="{{entrance_animation}} rig-post-feature-image">
+{% else %}
+    {% for images in preview_image|keys %}
+        {% if loop.last %}
+            <img src="{{images}}" class="{{entrance_animation}} rig-post-feature-image">
+        {% endif %}
+    {% endfor %}
+{% endif %}

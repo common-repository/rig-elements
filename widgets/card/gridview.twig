@@ -1,0 +1,19 @@
+<div class="grid mobile:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-1 overflow-hidden shadow-md rig-card">
+
+  {% if enable_image == 'enable_image' %}
+    <a href="{{card_image_url.url}}"><img class="w-full rig-card-image" src="{{card_image.url}}" alt=""></a>
+    {% endif %}
+  
+  <div class="block p-4 rig-card-content">
+
+    {% if enable_title == 'enable_title' %}
+    <h2 class="font-bold text-xl mb-2 rig-card-title">{{card_title}}</h2>
+    {% endif %}
+
+    {% if enable_description == 'enable_description' %}
+    <div class="text-gray-700 text-base rig-card-description">{{card_description}}</div>
+    {% endif %}
+
+  </div>
+  
+</div>

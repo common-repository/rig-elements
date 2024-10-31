@@ -1,0 +1,1 @@
+jQuery("#rig-lead-submit").on("click",(function(){var a=jQuery("#name").val(),e=jQuery("#email").val();jQuery.post(rig_ajaxdata.ajaxurl,{action:"rig_leads_submit",lead_name:a,lead_email:e},(function(a,e){}))}));

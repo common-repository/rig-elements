@@ -1,0 +1,5 @@
+{% if elementor_preview_mode == null %}
+    <div class="product_description">{{product_description}}</div>
+{% else %}
+    <div class="product_description">{{preview_description}}</div>
+{% endif %}

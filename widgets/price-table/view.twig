@@ -1,0 +1,55 @@
+<section>
+
+<div class="relative items-center w-full">
+<div>
+<div class="relative overflow-hidden">
+<div class="relative flex flex-col p-8 bg-blue-600 overflow-auto rig-price-table">
+
+<div class="relative flex-1">
+
+<!-- Table Image -->
+{% if price_table_image_enable == 'enable_image' %}
+<img class="w-full rig-price-table-image" src="{{price_table_image.url}}">
+{% endif %}
+
+<!-- Table Title -->
+<h3 class="text-xl font-semibold text-white rig-price-table-title">{{price_table_title}}</h3>
+
+
+<!-- Table Description Before Currency -->
+<p class="text-white text-solitud rig-price-table-description">{{price_table_description_before}}</p>
+
+<!-- Table Price & Currency -->
+  <div class="flex items-baseline mt-4 text-white text-center rig-price-table-price">
+    <span class="text-5xl font-extrabold tracking-tight rig-price-table-currency">{{price_table_currency}}{{price_table_price}}</span>
+    <span class="ml-1 text-xl font-semibold rig-price-table-period">{{price_table_period}}</span>
+  </div>
+
+<!-- Table Description After Currency-->
+ <p class="text-white text-solitud rig-price-table-description">{{price_table_description_after}}</p>
+
+
+  <!-- Feature list -->
+          <div class="pt-6 mt-4 space-y-4">
+          {% for features in price_table_feature_list %}
+          <div class="flex rig-price-table-feature">
+          <i class="{{features.price_table_feature_icon.value}} rig-price-table-icon"></i><p class="text-base text-white rig-price-table-text">{{features.price_table_feature_text}}</p>
+          </div>
+          {% endfor %}
+          </div>
+      </div>
+
+  <!-- Table Button -->
+
+      {% if price_table_button_enable == 'enable_button' %}
+      <div class="flex mt-6 rounded-lg rig-price-table-button">
+      <span><a href="{{price_table_button_link.url}}" class="w-full items-center px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white">{{price_table_button_text}}</a></span>
+      </div>
+      {% endif %}
+
+      </div>
+      </div>
+      </div>
+      </div>
+
+</section>

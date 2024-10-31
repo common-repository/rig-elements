@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'rig-elements';
+  src:  url('fonts/rig-elements.eot?1haomx');
+  src:  url('fonts/rig-elements.eot?1haomx#iefix') format('embedded-opentype'),
+    url('fonts/rig-elements.ttf?1haomx') format('truetype'),
+    url('fonts/rig-elements.woff?1haomx') format('woff'),
+    url('fonts/rig-elements.svg?1haomx#rig-elements') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="rig-"], [class*=" rig-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rig-elements' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.elementor-element [class*="rig-"]:after {
+  content: "RE";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  color: #ffffff;
+  background-color: #F35802;
+  /* background: transparent; */
+  font-size: 10px;
+  font-family: Roboto,Arial,Helvetica,Verdana,sans-serif;
+  padding: 0.2em 0.5em;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-width: 0 0 1px 1px;
+  border-color: #e0e0e0;
+  border-style: solid;
+}
+
+.rig-lead-capture:before {
+  content: "\e91d";
+  color: #595959;
+}
+.rig-gumroad:before {
+  content: "\e91c";
+  color: #595959;
+}
+
+.rig-add-to-cart:before {
+  content: "\e900";
+  color: #595959;
+}
+.rig-advance-card:before {
+  content: "\e901";
+  color: #595959;
+}
+.rig-advance-post:before {
+  content: "\e902";
+  color: #595959;
+}
+.rig-advance-product:before {
+  content: "\e903";
+  color: #595959;
+}
+.rig-flickr:before {
+  content: "\e904";
+  color: #595959;
+  font-size: 18px;
+}
+.rig-imgur:before {
+  content: "\e905";
+  color: #595959;
+  font-size: 20px;
+}
+.rig-logo-showcase:before {
+  content: "\e906";
+  color: #595959;
+}
+.rig-lottie-animation:before {
+  content: "\e907";
+  color: #595959;
+}
+.rig-post-description:before {
+  content: "\e908";
+  color: #595959;
+}
+.rig-post-feature-image:before {
+  content: "\e909";
+  color: #595959;
+}
+.rig-post-title:before {
+  content: "\e90a";
+  color: #595959;
+}
+.rig-price-table:before {
+  content: "\e90b";
+  color: #595959;
+}
+.rig-product-category:before {
+  content: "\e90c";
+  color: #595959;
+}
+.rig-product-description:before {
+  content: "\e90d";
+  color: #595959;
+}
+.rig-product-filter:before {
+  content: "\e90e";
+  color: #595959;
+}
+.rig-product-image-gallery:before {
+  content: "\e90f";
+  color: #595959;
+}
+.rig-product-image:before {
+  content: "\e910";
+  color: #595959;
+}
+.rig-product-meta:before {
+  content: "\e911";
+  color: #595959;
+}
+.rig-product-price:before {
+  content: "\e912";
+  color: #595959;
+}
+.rig-product-sku:before {
+  content: "\e913";
+  color: #595959;
+}
+.rig-product-title:before {
+  content: "\e914";
+  color: #595959;
+}
+.rig-search:before {
+  content: "\e915";
+  color: #595959;
+}
+.rig-site-logo:before {
+  content: "\e916";
+  color: #595959;
+}
+.rig-soundcloud:before {
+  content: "\e917";
+  color: #595959;
+}
+.rig-tiktok:before {
+  content: "\e918";
+  color: #595959;
+}
+.rig-twitter:before {
+  content: "\e919";
+  color: #595959;
+}
+.rig-waze-map:before {
+  content: "\e91a";
+  color: #595959;
+}
+.rig-woocommerce:before {
+  content: "\e91b";
+  color: #595959;
+  font-size: 18px;
+}

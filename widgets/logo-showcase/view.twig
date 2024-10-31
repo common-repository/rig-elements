@@ -1,0 +1,9 @@
+<div class="grid mobile:grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-1 rig-logo-showcase">
+  {% for logo in logo_list %}
+    <div class="block p-2 rig-logo-showcase-content">
+    <img class="w-full rig-logo-showcase-image" src="{{logo.logo_image.url}}">
+    <h2 class="font-bold text-xl mb-2 rig-logo-showcase-title">{{logo.logo_title}}</h2>
+    <p class="text-gray-700 text-base rig-logo-showcase-description">{{logo.logo_tagline}}</p>
+    </div>
+  {% endfor %}
+</div>

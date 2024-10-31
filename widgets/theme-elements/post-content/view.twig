@@ -1,0 +1,11 @@
+{% if elementor_preview_mode == null %}
+    <div class="rig-post-content">{{post_content}}</div>
+{% else %}
+    <div class="rig-post-content">
+    {% for contents in preview_content|keys %}
+        {% if loop.first %}
+            {{ contents }}
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endif %}
